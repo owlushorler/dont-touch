@@ -1,0 +1,373 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button  class="dark" onclick="lam()">mode</button>
+  
+  <div class="one">
+        <h2>my portfolio </h2>
+        <h3>home</h3>
+        <h3>games</h3>
+        <h3>subscribe</h3>
+        <h4>help</h4>
+    <div></div>
+  </div>
+  
+  <nav class="two">
+    <button class="tt" disabled>html</button>
+    <button class="tt" disabled>css</button>
+    <button class="tt" disabled>js</button>
+    
+   
+  </nav>
+  
+  <h1 class="h">NEW JS PROJECTS</h1>
+  <h4 class="h">welcome as you explore</h4>
+  <section class="part">
+    
+  <nav class="cc">
+    <h3 class="h" > calculator <br>calculate your figures</h3>
+    <div class="bookk"></div>
+    <div class="book" ></div>
+   <div class="cal">
+    
+   <div class="ca" onclick="c()" >c</div>
+  <div class="ca" onclick="call('/')" >/</div>
+  <div class="ca" onclick="call('*')" >*</div>
+   <div class="ca" onclick="del()" >bk</div>
+   <div class="ca" onclick="call(7)" >7</div>
+   <div class="ca" onclick="call(8)" >8</div>
+   <div class="ca" onclick="call(9)" >9</div>
+   <div class="ca" onclick="call('-')" >-</div>
+   <div class="ca" onclick="call(4)" >4</div>
+   <div class="ca" onclick="call(6)" >5</div>
+   <div class="ca" onclick="call(6)" >6</div>
+   <div class="ca" onclick="call('+')" >+</div>
+   <div class="ca" onclick="call(1)" >1</div>
+   <div class="ca" onclick="call(2)" >2</div>
+   <div class="ca" onclick="call(2)" >3</div>
+   <div class="ca" onclick="call(0)" >0</div>
+  <div class="ca" onclick="call('.')" >.</div> 
+   <div class="ca" onclick="joop()" >=</div>
+
+   </div>
+    
+  </nav>
+  
+  
+  <!-- game -->
+  <nav class="hop"  >
+    <h1 style="text-align: center">game</h1>
+ 
+   <div style= "display: flex; flex-direction: row; justify-content: center;">
+    
+    <h1>play  head and tail game </h1>
+
+    </div>
+<div style= "display: flex; flex-direction: row; justify-content: center;">
+    <h4> <span style="color: brown;">instruction :</span> if you guess and pick the 
+        same as the computer you won if not you loss and your score will be recorded </h4>
+    </div>
+    
+    
+     <div style= "display: flex; flex-direction: column; justify-content: center; align-items: center;"> 
+    <div id="table" style="color: skyblue; text-h"> </div>
+    <div style="color: red;text-align: center; " id="ta" ></div>
+    <div style="color: whitesmoke"  id="taa"></div>
+      </div>  
+
+    <div style= "display: flex; flex-direction: row; justify-content: center;">
+    <button class="bu" onclick="gam('pure')"  >head </button> 
+    <button style="background-color: red;text-align: center" class=" bu" onclick="gam('table')" >tail</button>
+     </div>
+
+
+
+</mav>
+  
+  <script src="main.js"></script>
+
+
+
+
+  <style>
+:root {
+  --b: gold;
+  --primary:black;
+  --second: white;
+  --lo: blue;
+  --tt:purple;
+  --p: green;
+
+  
+}
+body {
+  background: var(--b)
+}
+
+.lov{
+  --primary:white;
+  --second: black;
+  --lo: black;
+  --b: black;
+  --p: white;
+}
+
+.ho{
+  background-color: var(--primary)
+}
+.one, .on {
+  color:var(--primary);
+  display: flex;
+  flex-direction: row;
+ justify-content: space-around;
+ background-color: var(--lo)
+
+}
+.tt{
+  background: var(--tt);
+  margin: 20px;
+  width: 60px;
+  color: var(--second)
+}
+.two {
+  color: var(--primary)
+}
+
+.h{
+  color:var(--primary);
+  text-align: center
+}
+
+/*calculator*/
+
+.cal{
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  gap: 10px;
+  background: pink
+}
+.ca{
+ background: var(--p);
+ text-align: center;
+}
+
+.book,.bookk{
+  color: var(--primary)
+}
+
+.cc {
+  width: 230px;
+  justify-content: center;
+    box-shadow: 10px 10px 1px var(--primary);
+height: 220px
+}
+
+
+/*game<*/
+
+.hop {
+  width: 230px;
+  box-shadow: 10px 10px;
+  color: var(--primary);
+  background-color: var(--tt);
+ 
+ margin-left: -200px
+  
+  
+}
+
+.bu{
+  width: 100px;
+  margin: 10px
+}
+
+.part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+  </style>
+
+
+
+
+<script>
+
+
+function lam(){
+  document.body.classList.toggle("lov")
+}
+
+// calculator//
+
+fam = []
+ let lll = ''
+
+call = (man) => {
+  if (man === 1 ){
+    pp = 1
+  }else if (man === 2){
+    pp = 2
+  }
+  else if (man === 3) {
+    pp = 3
+  }else if (man === 4){
+    pp = 4
+  }
+   else if (man === 5) {
+     pp = 5
+   } 
+   else if (man === 6) {
+     pp = 6
+   }else if (man === 7) {
+     pp = 7
+   }
+   else if (man === 8) {
+     pp = 8
+   }
+   else if (man === 9) {
+     pp = 9
+   }else if (man === 0) {
+     pp = 0
+   }
+
+ else if (man === '+'){
+    pp = ('+')
+  }
+  else if (man === '-') {
+    pp = '-'
+  }else if (man === '*') {
+    pp = '*'
+  }else if (man === '/') {
+    pp = '/'
+  }else if (man === '.') {
+    pp = '.'
+  }
+  fam.push(pp)
+ loo()
+   
+  console.log(fam)
+  }
+  
+   // for loop// 
+  loo = ()=>{
+    let lll = ''
+   
+     
+  for (i= 0; i<fam.length; i++){
+    let koll = fam[i]
+    lll += koll
+    document.querySelector('.book').innerHTML = lll
+    console.log(lll)
+    
+  }
+}
+
+
+zero = () =>{
+   return (fam = [])
+}   
+   
+//equal to//
+ joop =() => {
+   lloop = ''
+       lll = eval(fam.join(''))
+   document.querySelector('.bookk').innerHTML = lll
+  zero()
+  document.querySelector('.book').innerHTML = lll
+  fam.push(lll)
+ console.log(lll)
+   
+    console.log(eval(fam.join('')))
+ }
+ 
+ //del//
+  del =() =>{
+ if(fam == ''){
+     document.querySelector('.book').innerHTML = ''
+
+   }else if (fam !== []) {
+     fam.pop()
+     loo()
+   }
+   console.log(fam)
+   
+ }
+ 
+c = ()=>{
+   zero()
+        document.querySelector('.book').innerHTML = ''
+     document.querySelector('.bookk').innerHTML = ''
+
+   
+ }
+ 
+ 
+ // game//
+ win = 0
+
+loss = 0
+
+
+
+gam = (lop) =>  {
+    re = ""
+    lo = ''
+    wo =''
+    let math = Math.random()
+    if (lop === 'pure'){
+        if(math > 0 && math < 0.5 ){
+           re =  'head'
+           win ++
+           lo += 'head'
+           wo = 'win'
+
+        }else if (math >= 0.5 && math<= 1){
+            re = 'tail'
+            loss ++
+            lo += 'head'
+            wo = 'loss'
+        }
+    }else if (lop === 'table'){
+        if(math > 0 && math < 0.5 ){
+            re =  'tail'
+            win ++ 
+            lo = 'tail'
+            wo = 'win'
+         }else if (math >= 0.5 && math<= 1){
+             re = 'head'
+             loss ++
+             lo = 'tail'
+             wo = 'loss'
+         }
+    }return (document.getElementById("table").innerHTML= `win${win} loss${loss}`,
+    document.getElementById("ta").innerHTML=`you pick ${lo} and computer picked ${re}`
+    , document.getElementById('taa').innerHTML = `you ${wo}`)
+}
+
+
+function re(){
+return (document.getElementById("table").innerHTML= `win${win === 0} loss${loss = 0}`,
+document.getElementById("ta").innerHTML=`you pick ${lo = ''} and computer picked ${re = ''}`
+, document.getElementById('taa').innerHTML = `you ${wo = ''}`)
+}
+
+</script>
+</body>
+</html>
